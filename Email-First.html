@@ -8,9 +8,72 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<style>
+    /* desktop */
+    @media only screen and (min-width: 960px) {
+        .container{
+            width: 960px;
+        }
+        .header-left {
+            padding: 36px 15px 70px 15px !important;
+        }
+        .image_head{
+            width: 100%;
+        }
+    }
+    /* midsize */
+    @media only screen and (max-width: 960px) {
+        .container{
+            width: 600px;
+        }
+        .image_head{
+            width: 100%;
+        }
+    }
+    /* mobile */
+    @media only screen and (max-width: 600px) {
+        .container{
+            width: 100%;
+        }
+        .header-left {
+            width: 100%;
+        }
+        .header-right {
+            width: 100%;
+        }
+        .second-left{
+            width: 50%;
+        }
+        .second-middle{
+            width: 50%;
+        }
+        .second-right{
+            width: 100%;
+        }
+        .third-row .image_head{
+            width: 100%;
+        }
+        .third-leftrow{
+            width: 100%;
+        }
+        .third-leftrow .left-store{
+            text-align: center;
+            width: 100%;
+        }
+        .third-rightrow{
+            width: 100%;
+        }
+        .third-rightrow .right-store{
+            text-align: center;
+            width: 100%;
+        }
+    }
+</style>
+
 </head>
 
-<body style="font-family: 'Open Sans', sans-serif; background: black;">
+<body style="font-family: 'Open Sans', sans-serif;">
     <!--Start of HTML Email-->
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
@@ -36,7 +99,7 @@
                             <table class="header-right" width="50%" align="right" cellspacing="0" cellpadding="0" border="0">
                                 <tr>
                                     <td style="color: #7d7d7d;">
-                                        <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 20px;">
+                                        <table class="menu-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 20px;">
                                             <tr>
                                                 <td align="center">
                                                     <a href="#" style="font-size: 14px;color: #7d7d7d;font-weight:600px; text-decoration:none;">About</a>
@@ -140,7 +203,7 @@
                             <table class="third-row" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 15px 15px 70px 15px;">
                                 <tr>
                                     <td style="color: #333333; padding: 30px 0 24px 0; font-weight: 350; text-transform:uppercase; font-size: 24px;" align="center">
-                                        <img src="img/Rechthoek 61.png">
+                                        <img src="img/Rechthoek 61.png" class="image_head">
                                     </td>
                                 </tr>
                                 <tr>
@@ -158,7 +221,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="right">
+                                                <td align="right" class="left-store">
                                                     <img src="img/App Store.png">
                                                 </td>
                                             </tr>
@@ -172,7 +235,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="left">
+                                                <td align="left" class="right-store">
                                                     <img src="img/Google Play.png">
                                                 </td>
                                             </tr>
@@ -190,7 +253,7 @@
                             <table class="fourth-row" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 15px 15px 40px 15px;">
                                 <tr>
                                     <td>
-                                        <img style="width: 600px;" src="img/oneapp.png" alt="">
+                                        <img style="width: 100%;" src="img/oneapp.png" alt="">
                                     </td>
                                 </tr>
                             </table>
@@ -468,7 +531,7 @@
                     <!--Start of Seventh Row-->
                     <tr>
                         <td>
-                            <table class="header-left" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(96,248,252,1) 0%, rgba(0,212,255,1) 75%, rgba(101,255,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */; padding: 15px 15px 70px 15px;">
+                            <table class="interested-row" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(96,248,252,1) 0%, rgba(0,212,255,1) 75%, rgba(101,255,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */; padding: 15px 15px 70px 15px;">
                                 <tr>
                                     <td align="center">
                                         <h3 style="color: white; padding: 35px 15px 15px; font-weight: 300; font-size: 24px; margin:0;" align="center">Interested in our App?</h3>
@@ -476,13 +539,53 @@
                                         <a href="#" class="ghost-btn" style="font-size: 10px; border: radius 3px; border: 2px solid white; text-decoration:none; color:white; padding:10px 15px; text-transform:uppercase;">request a quote</a>
                                     </td>
                                 </tr>
+                            </table>
                         </td>
                     </tr>
                     <!--End of Seventh Row-->
                     <!--Start of Eighth Row-->
                     <tr>
                         <td>
-
+                            <table class="footer-row" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 25px 15px 0px 25px; background:white;">
+                                <tr>
+                                    <td align="center">
+                                        <h2 style="font-weight:700;text-transform:uppercase; font-size: 28px">Hero</h2>
+                                    </td>
+                                </tr>
+                            </table>
+                            <tr>
+                                <td>
+                                    <table align="center" class="icon-row" width="300px" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 15px 15px 0px 15px;">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="img/twitter_icon.png">
+                                            </td>
+                                            <td align="center">
+                                                <img src="img/facebook_icon.png">
+                                            </td>
+                                            <td align="center">
+                                                <img src="img/linkedin_icon.png">
+                                            </td>
+                                            <td align="center">
+                                                <img src="img/pinterest_icon.png">
+                                            </td>
+                                            <td align="center">
+                                                <img src="img/youtube_icon.png">
+                                            </td>
+                                            <td align="center">
+                                                <img src="img/google_icon.png">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <table class="footer-row" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 25px 15px 5px 25px; background:white;">
+                                <tr>
+                                    <td align="center">
+                                        <p style="color: #7f8887; font-weight: 400; line-height:1.8; font-size: 12px;">© 20XX All rights Reserved - Yourcompany. Is your inbox overflowing?  <a href="#" style="font-size: 12px;color: #34ebeb;font-weight:600px; text-decoration:underline;"> Unsubscribe</a></p>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                     <!--End of Eighth Row-->
